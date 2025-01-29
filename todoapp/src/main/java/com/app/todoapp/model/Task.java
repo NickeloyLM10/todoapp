@@ -15,9 +15,32 @@ public class Task {
     private String title;
     private boolean completed;
 
-    public Task(Long id, String title, boolean completed) {
-        this.id = id;
-        this.title = title;
+    public void setCompleted(boolean completed) {
         this.completed = completed;
     }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public boolean isCompleted() {
+        return completed;
+    }
+
+    public String toString() {
+        return "Task{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", completed=" + completed +
+                '}';
+    }
+
 }
